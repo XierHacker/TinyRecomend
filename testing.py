@@ -15,6 +15,7 @@ def loadfile(filename):
     print('load %s succ' % filename, file=sys.stderr)
 
 
+#生成用户-物品评分矩阵
 Set=np.zeros(shape=(6050,4000))
 for line in loadfile("data/ml-1m/ratings.dat"):
     userID,movieID,rate,timestamp=line.split("::")

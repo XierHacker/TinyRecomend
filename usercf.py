@@ -11,6 +11,10 @@ class UserCF():
     def __init__(self):
         pass
 
+    def user_similarity(self,trainSet):
+        
+
+
     def fit(self):
         pass
 
