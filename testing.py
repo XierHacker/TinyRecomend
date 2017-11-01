@@ -1,5 +1,6 @@
-import data
+from data import Data
 import numpy as np
+import sys
 
 #分批读取
 def loadfile(filename):
@@ -15,9 +16,21 @@ def loadfile(filename):
 
 
 Set=np.zeros(shape=(6050,4000))
-for line in loadfile("ml-1m/ratings.dat"):
+for line in loadfile("data/ml-1m/ratings.dat"):
     userID,movieID,rate,timestamp=line.split("::")
     # print(userID,movieID,rate,timestamp)
     Set[int(userID),int(movieID)]=int(rate)
 print(Set.shape)
 print(Set)
+
+d=Data(Set)
+print(d.dataSet.shape)
+
+#返回迭代器对象
+indexes=d.split()
+
+
+
+
+
+
