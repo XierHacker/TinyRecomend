@@ -7,7 +7,7 @@ import data
 import math
 
 
-class ItemCF:
+class ItemCF():
     def __init__(self):
         pass
 

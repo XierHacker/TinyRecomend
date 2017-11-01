@@ -7,7 +7,7 @@ import metrics
 import data
 import math
 
-class UserCF:
+class UserCF():
     def __init__(self):
         pass
 
